@@ -16,6 +16,8 @@ Is [McLarenLabs](https://github.com/mclarenlabs/libs-mclaren-alpha) development 
 - libresample
 - gnustep/libs-steptalk
 
+![Debian13 Virtualbox and GNUstep](./pics/virtualbox-debian13-arm64-minimal.png)
+
 ## Procedure
 
 Start with a small Debian Net Installer and install a Full desktop environment.  I used Debian.
