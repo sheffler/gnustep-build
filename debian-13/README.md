@@ -26,12 +26,13 @@ Start with a small Debian Net Installer and install a Full desktop environment. 
 - debian-13.2.0-arm64-netinst.iso - 736 MiB
 
 
-These steps shoud be followed and performed manually in a terminal.  You will be prompted for sudo.  You should have already installed a complete desktop environment like Debian.
+These steps shoud be followed and performed manually in a terminal.  I like to run everything from my home directory and keep all git repositories in `~/git` You will be prompted for sudo.  You should have already installed a complete desktop environment like Debian.
 
 1. Install Dependencies
 
         su
-    	./gnustep-build/debian-13/bootstrap.sh
+    	./git/gnustep-build/debian-13/bootstrap.sh
+		exit
 
 2. Set up SUDO
 
@@ -42,31 +43,31 @@ These steps shoud be followed and performed manually in a terminal.  You will be
 	
 3. Fix up audio for VirtualBox if needed.  These scripts lengthen buffers.
 
-		./gnustep-build/debian-13/audio.sh
+		./git/gnustep-build/debian-13/audio.sh
 	
 4. Fetch sources
 
-		./gnustep-build/debian-13/checkout.sh
+		./git/gnustep-build/debian-13/checkout.sh
 	
 5. Apply patches to sources.
 
-		./gnustep-build/debian-13/patch.sh
+		./git/gnustep-build/debian-13/patch.sh
 	
 6. Build sources
 
-		./gnustep-build/debian-13/build.sh
+		./git/gnustep-build/debian-13/build.sh
 
 7. Install and configure fonts, if desired.
 
-		./gnustep-build/debian-13/fonts.sh
+		./git/gnustep-build/debian-13/fonts.sh
 	
 8. Configure the RIK theme, if desired.
 
-		./gnustep-build/debian-13/theme.sh
+		./git/gnustep-build/debian-13/theme.sh
 	
 9. Set up a DESKTOP item so you can select the GNUstep alternate environment from the login manager.
 
-		./gnustep-build/debian-13/desktop.sh
+		./git/gnustep-build/debian-13/desktop.sh
 	
 
 ## Notes
