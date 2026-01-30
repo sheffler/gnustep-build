@@ -37,7 +37,7 @@ These steps shoud be followed and performed manually in a terminal.  I like to r
 2. Set up SUDO
 
 		su
-		/usr/sbin/usermode -aG sudo sheffler
+		/usr/sbin/usermod -aG sudo sheffler
 		exit
 		(reboot)
 	
